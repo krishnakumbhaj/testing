@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Scheduler</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+            <div  class=" flex flex-col justify-center bg-gray-100">
+  <div class="w-full  bg-blue-600    rounded-lg p-8">
+    <h1 class="text-3xl font-extrabold text-center text-white  mb-8 tracking-wide">🕒 Task Scheduler</h1>
+    
+    <!-- Task Form -->
+    <div class="mb-10">
+      <form id="task-form" class="space-y-6">
+        <div>
+          <label for="task-name" class="block text-sm font-medium text-white mb-1">Task Name</label>
+          <input type="text" id="task-name" placeholder="Enter your task..." class="w-full p-3  border border-gray-300 rounded-full focus:ring focus:ring-red-300" required>
+        </div>
+        <div class="flex space-x-6">
+          <div class="flex-1">
+            <label for="start-time" class="block text-sm font-medium text-white mb-1">Start Time</label>
+            <input type="time" id="start-time" class="w-full p-3 border border-gray-300 rounded-full focus:ring focus:ring-red-300" required>
+          </div>
+          <div class="flex-1">
+            <label for="end-time" class="block text-sm font-medium text-white mb-1">End Time</label>
+            <input type="time" id="end-time" class="w-full p-3 border border-gray-300 rounded-full focus:ring focus:ring-red-300" required>
+          </div>
+        </div>
+        <button type="submit" class="w-full  bg-white  text-blue-600 font-semibold py-3 rounded-full shadow-md hover:opacity-90 transition">
+          Add Task
+        </button>
+      </form>
+    </div>
+
+    <!-- Task List Section -->
+</div>
+<div class=" p-4 absolute bottom-4 right-2 bg-white flex justify-center pt-3">
+  <div class="bg-blue-600 py-5 px-3 rounded-full text-white font-semibold "><a href="/display.html">Home</a></div>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
